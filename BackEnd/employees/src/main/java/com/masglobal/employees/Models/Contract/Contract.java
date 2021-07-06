@@ -1,15 +1,15 @@
 package com.masglobal.employees.Models.Contract;
 
-import javax.persistence.Column;
+/*import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "contract")
+@Table(name = "contract")*/
 public abstract class Contract {
-    @Id
-    @Column(unique = true, nullable = false)
+    /*@Id
+    @Column(unique = true, nullable = false)*/
     private Long id;
     
     protected Integer salary;
