@@ -21,6 +21,7 @@ Project Folder
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> Services/  
 
 #### Note: This Rest App was build for a MASGlobal app.
-- You can check the unit tests in the test folder  
+- You can check the unit tests in the test folder 
+- Remember to establish a proper MySQL connection in your `src\main\resources\application.properties` file
 
 I hope this will have everything you're asking for, I'll be tuned!
