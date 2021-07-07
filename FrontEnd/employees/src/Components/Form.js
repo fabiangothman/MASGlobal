@@ -29,6 +29,9 @@ const Form = () => {
         setFetching(false);
     }
 
+    /*  This function has a big O complexity of O(n), due the worst case could be n iterations in the forEach cycle,
+            this time could improve by requesting for a limited pagination data.
+    */
     const setData = (data) => {
         const newData = [];
         if(Array.isArray(data)){
