@@ -15,6 +15,9 @@ public class EmployeeService {
         return employeeRepository.fetchData();
     }
 
+    /*  This function has a big O complexity of O(n), due the worst case could be n iterations in the forEach cycle,
+            this time could improve by implementing a custom pagination system.
+    */
     public EmployeeContract getEmployeeById(Long id){
         List<EmployeeContract> totalEmployees = employeeRepository.fetchData();
         EmployeeContract foundEmployee = new EmployeeContract();

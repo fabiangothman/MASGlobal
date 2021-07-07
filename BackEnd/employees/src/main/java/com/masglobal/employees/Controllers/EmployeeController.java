@@ -17,11 +17,14 @@ public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
 
+    /*  This function returns a List object of employees read from the external web API.    */
     @GetMapping()
     public List<EmployeeContract> getEmployees(){
         return employeeService.getEmployees();
     }
+    
 
+    /*  This function returns a EmployeeContract object of a employee read from the external web API.   */
     @GetMapping(path = "/id/{id}")
     public EmployeeContract getEmployeeById(@PathVariable("id") Long id){
         return employeeService.getEmployeeById(id);

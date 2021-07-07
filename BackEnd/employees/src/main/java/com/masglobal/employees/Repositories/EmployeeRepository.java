@@ -19,6 +19,9 @@ public class EmployeeRepository {
         return new RestTemplate();
     }
     
+    /*  This function has a big O complexity of O(n), due the worst case could be n iterations in the forEach cycle,
+            this time could improve by implementing a custom pagination system.
+    */
     public List<EmployeeContract> fetchData(){
         Employee[] employees = restTemplate().getForObject("http://masglobaltestapi.azurewebsites.net/api/employees", Employee[].class);
         List<EmployeeContract> employeeContractList = new ArrayList<EmployeeContract>();
