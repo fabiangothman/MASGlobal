@@ -1,15 +1,28 @@
-## Welcome
+# Welcome
 
-#### Java Rest API using Spring
+### Java Rest API using Spring
 
 Hello, purpose of this little app is fetching data from [Swagger](http://masglobaltestapi.azurewebsites.net/swagger/) and make to it the necessarly changes to work properly with a custom API which is going to be consumed by a React.JS site (it's in the "FrontEnd" folder on the root)<br>.
 
-##### Run:
+### Creation
+This app was created using  [Spring Initializr](https://start.spring.io/)
+- Initilized with this packages:
+	- tomcat (default)
+	- mysql
+	- jpa
+
+### JDK
+Version 11
+
+### Run:
 Just run the project by:  
 `.\mvnw.cmd spring-boot:run`
 
+### Enpoints testing
+- http://localhost:8080/employee
+- http://localhost:8080/employee/id/1
 
-Project Folder  
+### Project Folder  
 |  
 |-> src/main/java/  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  
